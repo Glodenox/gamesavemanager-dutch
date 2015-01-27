@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameSaveManager_Translation>
+	<Title>Maak een back-up</Title>
+	<Detection>
+		<Title>Gedetecteerde games</Title>
+		<ListCheck>Alles selecteren / Niets selecteren</ListCheck>
+		<Counter>%TOTAL% item(s) gedetecteerd / %SELECTED% item(s) geselecteerd</Counter>
+		<Legend>
+			<Title>Legenda</Title>
+			<Files>Bestanden worden opgeslagen</Files>
+			<Registry>Registergegevens worden opgeslagen</Registry>
+			<Warning>Er is een waarschuwing die je wellicht wenst te lezen</Warning>
+			<EntireEntry>De volledige game wordt opgeslagen</EntireEntry>
+		</Legend>
+	</Detection>
+	<Options>
+		<Start>Start de back-uptaak nu.</Start>
+		<Delete>Verwijder geselecteerde back-ups van systeem.</Delete>
+		<Rescan>Je systeem opnieuw scannen voor ondersteunde gamesaves.</Rescan>
+	</Options>
+	<Details>
+		<Title>Details</Title>
+		<NoneSelected>Geen item geselecteerd.
+
+Gelieve een item te selecteren in de lijst aan de linkerkant.</NoneSelected>
+		<Entry>
+			<Name>Back-upnaam:</Name>
+			<IsOfficial>Offici&euml;le backup:</IsOfficial>
+			<Size>Bestandsgrootte:</Size>
+			<Warning>Waarschuwing:</Warning>
+		</Entry>
+		<Directory>
+			<Directory>Map:</Directory>
+			<Size>Grootte op schijf:</Size>
+			<Files>Bestanden:</Files>
+		</Directory>
+		<Registry>
+			<Key>Registersleutel:</Key>
+			<Values>Waardes:</Values>
+		</Registry>
+	</Details>
+	<GameplayBackup>
+		<Title>Gameplay Back-up</Title>
+		<Info>Speel een game terwijl GameSave Manager op de achtergrond je vooruitgang periodiek opslaagt met Gameplay Back-up.
+Om de verwerkingstijden en lag-pieken in-game te verminderen dien je best enkel de game te selecteren die je actief aan het spelen bent.
+
+Bekijk de Taakplanner voor meer routinematige back-ups.</Info>
+		<Interval>
+			<RunEvery>Maak een back-up elke...</RunEvery>
+			<minutes>minuten</minutes>
+			<hour>uur</hour>
+			<hours>uren</hours>
+		</Interval>
+		<Processing>
+			<Title>Gameplay Back-up (taak actief)</Title>
+			<Info>GameSave Manager voert nu op de achtergrond back-ups uit van de geselecteerde items elke %INTERVAL%.
+
+Je kan dit venster nu minimaliseren en beginnen met spelen.
+Nota: afhankelijk van je selectie en systeemspecificaties kan je lichte lag-pieken ervaren terwijl de back-ups worden uitgevoerd.
+
+
+Om deze taak te be&euml;indigen klik je op de 'Sluiten'-knop van dit venster (X in de rechterbovenhoek).</Info>
+			<Interval>Interval:</Interval>
+			<TimesRan>Aantal uitvoeringen:</TimesRan>
+			<DetectedErrors>Gedecteerde fouten:</DetectedErrors>
+			<ProcessingBackup>Momenteel back-up(s) aan het uitvoeren...</ProcessingBackup>
+			<Stopping>Huidige operatie aan het stoppen, dit kan even duren...</Stopping>
+		</Processing>
+		<Messages>
+			<MissingInfo title="Fout:" width="350" height="110">Gelieve ten minste een item te selecteren om te verwerken, alsook een locatie om de back-ups in op te slagen.</MissingInfo>
+		</Messages>
+	</GameplayBackup>
+	<Errors>
+		<Rescan title="Opnieuw scannen?" width="450" height="170">GameSave Manager heeft gebruik gemaakt van de scanresultaten van een vorige sessie en bijgevolg zijn nieuwe gamesaves die sindsdien zijn toegevoegd niet beschikbaar in de lijst.
+Om dit op te lossen dien je een nieuwe volledige scan uit te voeren van je systeem.
+
+Wil je nu een nieuwe volledige scan uit te voeren?</Rescan>
+		<Success title="Succes" width="350" height="110">De back-uptaak is voltooid.
+
+Er werden geen fouten gedetecteerd.</Success>
+		<Failed title="Foutmelding" width="420" height="110">De back-uptaak is voltooid.
+
+Jammer genoeg werder ten minste 1 fout gedetecteerd.
+
+Er werd een logbestand opgeslagen. Wil je het bekijken?</Failed>
+		<Overwrite title="Bestand bestaat al..." width="450" height="125">Het bestand dat je opgegeven hebt bestaat al.
+Als je verder gaat zal GameSave Manager het overschrijven met de resultaten van deze back-up.
+
+Verder gaan en bestand overschrijven?</Overwrite>
+		<NoEntries>GameSave Manager kon geen ondersteunde gamesaves vinden op je systeem.
+
+Misschien is er een database-update beschikbaar?
+You could also create a Custom Gamesave Entry.</NoEntries>
+		<NoneSelected title="Error:" width="350" height="110">No gamesaves have been specified to be included in the backup.</NoneSelected>
+		<Delete>
+			<NoneSelected title="Error:" width="350" height="110">No gamesaves have been specified to be included in the Removal Task.</NoneSelected>
+			<Warning title="Attention!" width="500" height="170">There are a few things you should note before continuing...
+
+1. Only the files listed for each entry selected will be removed
+2. It's highly recommended that you backup your saves before proceeding
+3. Once you commit to this operation, it cannot be undone without a previously-created backup!
+
+Continue anyway?</Warning>
+			<Success title="Success" width="350" height="110">The Removal Task has completed.
+
+Thankfully, no errors were detected.</Success>
+			<Failed title="Failure" width="420" height="110">The Removal Task has completed.
+		
+Unfortunately, at least 1 error was detected.
+
+A log has been saved. Would you like to view it?</Failed>
+		</Delete>
+	</Errors>
+</GameSaveManager_Translation>
